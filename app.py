@@ -1,4 +1,3 @@
-
 import os
 import joblib
 import numpy as np
@@ -36,6 +35,21 @@ MODEL_FILES = {
     "Naive Bayes": "naive_bayes.joblib",
     "Support Vector Machine": "svm.joblib"
 }
+
+st.markdown("""
+<style>
+/* Blue outline when the classifier dropdown is selected */
+div[data-baseweb="select"] > div:focus-within {
+    border-color: #2563EB !important;
+    box-shadow: 0 0 0 1px #2563EB !important;
+}
+
+/* Blue border on hover */
+div[data-baseweb="select"] > div:hover {
+    border-color: #2563EB !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # --------------------------------------------------
 # 2. Load the saved models
