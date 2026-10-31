@@ -270,6 +270,6 @@ else:
 
 st.divider()
 st.caption(
-    "M.Tech AIML | Machine Learning Assignment 2 | "
+    "Dev - Mohammed Nayaz | M.Tech AIML | Machine Learning Assignment 2 | "
     "APS Failure at Scania Trucks"
 )
