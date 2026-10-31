@@ -15,9 +15,11 @@ from sklearn.metrics import (
     classification_report
 )
 
+
 # --------------------------------------------------
 # 1. Application configuration
 # --------------------------------------------------
+
 st.set_page_config(
     page_title="APS Failure Prediction",
     page_icon="🚛",
@@ -36,18 +38,24 @@ MODEL_FILES = {
     "Support Vector Machine": "svm.joblib"
 }
 
+# --------------------------------------------------
+# 2. Custom styling
+# --------------------------------------------------
+
 st.markdown("""
 <style>
-/* Blue outline when the classifier dropdown is selected */
+
+/* Blue outline when dropdown is focused */
 div[data-baseweb="select"] > div:focus-within {
     border-color: #2563EB !important;
     box-shadow: 0 0 0 1px #2563EB !important;
 }
 
-/* Blue border on hover */
+/* Blue outline on hover */
 div[data-baseweb="select"] > div:hover {
     border-color: #2563EB !important;
 }
+
 </style>
 """, unsafe_allow_html=True)
 
